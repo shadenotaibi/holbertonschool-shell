@@ -1,0 +1,49 @@
+# holbertonschool-shell
+
+## Description
+This repository contains the work done while learning the basics of the Unix shell. The shell is the program that reads the commands typed by the user in the terminal, interprets them, and asks the operating system to run them. It is one of the most important tools for anyone working with Linux systems, servers, and networks.
+
+## What is covered
+- Navigating the filesystem: working directory, home directory, parent directory, absolute and relative paths.
+- Listing files and directories with different options, including hidden files and long format.
+- Creating, copying, moving, and deleting files and directories.
+- Using wildcards to match groups of files.
+- Working with commands: types of commands, getting help, and using shell special characters.
+- Writing small Bash scripts that follow strict rules: a shebang as the first line, exactly two lines, and an ending new line.
+
+## Environment
+- All scripts are written for Ubuntu 22.04 LTS.
+- All scripts are interpreted by Bash.
+- Allowed editors: vi, vim, emacs.
+
+## Structure
+- basics: scripts for the first shell project. See the README.md inside the directory for a description of each script.
+
+## Usage
+Make a script executable, then run it:
+
+chmod u+x script_name
+./script_name
+EOF
+README مجلد basics (basics/README.md)
+
+هذا لازم يوصف كل سكربت. أمثلة على الصيغة، وعدّل حسب سكربتاتك الفعلية:
+
+bash
+cd ~/holbertonschool-shell/basics
+cat > README.md << 'EOF'
+# basics
+
+This directory contains the scripts of the shell basics project. Each script is exactly two lines long: a shebang followed by one command, and every file ends with a new line.
+
+## Scripts
+- 0-current_working_directory: prints the absolute path name of the current working directory.
+- 1-confused_smiley: displays a confused smiley using quotes and escaping.
+- 2-bring_me_home: changes the working directory to the home directory without using shell variables.
+- 7-movethatfile: moves the file betty from /tmp to /tmp/my_first_directory.
+- 11-lists: lists all files, including hidden ones, of the current directory, the parent directory, and /boot, in long format.
+- 16-clean_emacs: deletes all files ending with a tilde in the current directory.
+
+## Restrictions
+Backticks, double ampersand, double pipe, and semicolons are not allowed in the scripts.
+EOF
